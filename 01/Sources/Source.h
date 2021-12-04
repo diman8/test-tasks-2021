@@ -1,3 +1,4 @@
+#pragma once
 
 void print_as_binary(int input);
 

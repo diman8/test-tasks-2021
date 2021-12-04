@@ -22,3 +22,9 @@ ctest
 Подробнее:
 https://en.cppreference.com/w/cpp/types/numeric_limits/digits
 
+
+---
+
+**Benchmark** (with very questionable practices)
+
+https://quick-bench.com/q/TFe89AdZjBaOLWAlwxlqcpsyA50
