@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.14)
-project(MyProject CXX)
+project(TaskOne CXX)
 set(CMAKE_CXX_STANDARD 11)
 
 include(FetchContent)
@@ -13,8 +13,8 @@ FetchContent_MakeAvailable(googletest)
 
 enable_testing()
 
-add_executable(SimpleTest Sources/SimpleTest.cpp)
-target_link_libraries(SimpleTest gtest_main)
+add_executable(TaskOneTests Sources/Tests.cpp Sources/Source.cpp)
+target_link_libraries(TaskOneTests gtest_main)
 
 include(GoogleTest)
-gtest_discover_tests(SimpleTest)
+gtest_discover_tests(TaskOneTests)
