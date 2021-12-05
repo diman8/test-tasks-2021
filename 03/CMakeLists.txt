@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.14)
-project(TaskTwo CXX)
+project(TaskThree CXX)
 set(CMAKE_CXX_STANDARD 11)
 
 include(FetchContent)
@@ -13,8 +13,8 @@ FetchContent_MakeAvailable(googletest)
 
 enable_testing()
 
-add_executable(TaskTwoTests Sources/Tests.cpp Sources/Source.cpp Sources/Source.h)
-target_link_libraries(TaskTwoTests gtest_main)
+add_executable(TaskThreeTests Sources/Tests.cpp Sources/Source.cpp Sources/Source.h Sources/Base64EncDec.cpp Sources/Base64EncDec.h)
+target_link_libraries(TaskThreeTests gtest_main)
 
 include(GoogleTest)
-gtest_discover_tests(TaskTwoTests)
+gtest_discover_tests(TaskThreeTests)
